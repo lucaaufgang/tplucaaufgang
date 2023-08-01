@@ -3,7 +3,7 @@ let segundoNumero = parseInt(prompt("ingresar las cuotas"));
 
 let resultado = ingresarNumero / segundoNumero
 
-console.log("pagando en " + segundoNumero + " cuotas, las cuotas son de $" + resultado );
+alert("pagando en " + segundoNumero + " cuotas, las cuotas son de $" + resultado );
 
 const miArray = [1,3,6,12,18,24]
 
