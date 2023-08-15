@@ -1,9 +1,11 @@
-let ingresarNumero = parseInt(prompt("ingresar un numero"));
-let segundoNumero = parseInt(prompt("ingresar las cuotas"));
 
-let resultado = ingresarNumero / segundoNumero
 
-alert("pagando en " + segundoNumero + " cuotas, las cuotas son de $" + resultado );
+function mostrarResultado(){
+     
+    let valor = cuotass / monto ;
+    const resuntadoElement = document.getElementById("valor");
+    resuntadoElement.innerHTML = " el resultado es: " + valor;
+}
 
 const miArray = [1,3,6,12,18,24]
 
