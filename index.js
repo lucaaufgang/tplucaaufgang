@@ -5,6 +5,7 @@ function mostrarResultado(){
     let valor = cuotass / monto ;
     const resuntadoElement = document.getElementById("valor");
     resuntadoElement.innerHTML = " el resultado es: " + valor;
+    alert("el resultado es: " + valor);
 }
 
 const miArray = [1,3,6,12,18,24]
