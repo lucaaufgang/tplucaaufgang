@@ -2,7 +2,7 @@
 
 function mostrarResultado(){
      
-    let valor = cuotass / monto ;
+    let valor = cuotass / montoo ;
     const resuntadoElement = document.getElementById("valor");
     resuntadoElement.innerHTML = " el resultado es: " + valor;
     alert("el resultado es: " + valor);
