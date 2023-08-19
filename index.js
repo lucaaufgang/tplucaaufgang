@@ -4,13 +4,13 @@ const inputCuotas = document.getElementById("cuotas")
 const resp = document.getElementById("respuesta")
 
 const boton = document.getElementById("Boton")
-boton.addEventListener("click", mostrarResultado)
+
 
 function mostrarResultado(){
-    const mostrar = inputMonto / inputCuotas
+    const mostrar = inputMonto.value / inputCuotas.value
     resp.innertext = mostrar
 }
-
+boton.addEventListener("click", mostrarResultado)
 const miArray = [1,3,6,12,18,24]
 
 if (segundoNumero != miArray[0]){
