@@ -1,7 +1,8 @@
-
+const inputMonto = document.getElementById("monto")
+const inputCuotas = document.getElementById("cuotas")
 
 function mostrarResultado(){
-     
+   
     let valor = cuotass / montoo ;
     const resuntadoElement = document.getElementById("valor");
     resuntadoElement.innerHTML = " el resultado es: " + valor;
