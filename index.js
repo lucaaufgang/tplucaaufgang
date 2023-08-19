@@ -1,12 +1,14 @@
 const inputMonto = document.getElementById("monto")
 const inputCuotas = document.getElementById("cuotas")
 
+const resp = document.getElementById("respuesta")
+
 const boton = document.getElementById("Boton")
 boton.addEventListener("click", mostrarResultado)
 
 function mostrarResultado(){
-    console.log(inputCuotas.value)
-    console.log(inputMonto.value)
+    const mostrar = inputMonto / inputCuotas
+    respuesta.innerhtml = mostrar
 }
 
 const miArray = [1,3,6,12,18,24]
