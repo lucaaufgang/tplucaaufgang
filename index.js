@@ -7,7 +7,7 @@ const boton = document.getElementById("Boton")
 boton.addEventListener("click", mostrarResultado)
 
 function mostrarResultado(){
-    const mostrar = inputMonto.value / inputCuotas.value
+    const mostrar = inputMonto / inputCuotas
     resp.innertext = mostrar
 }
 
