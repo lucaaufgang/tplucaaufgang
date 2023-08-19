@@ -5,11 +5,8 @@ const boton = document.getElementById("Boton")
 boton.addEventListener("click", mostrarResultado)
 
 function mostrarResultado(){
-   
-    let valor = cuotass / montoo ;
-    const resuntadoElement = document.getElementById("valor");
-    resuntadoElement.innerHTML = " el resultado es: " + valor;
-    alert("el resultado es: " + valor);
+    console.log(inputCuotas.value)
+    console.log(inputMonto.value)
 }
 
 const miArray = [1,3,6,12,18,24]
