@@ -8,7 +8,7 @@ boton.addEventListener("click", mostrarResultado)
 
 function mostrarResultado(){
     const mostrar = inputMonto / inputCuotas
-    respuesta.innerhtml = mostrar
+    respuesta.innertext = mostrar
 }
 
 const miArray = [1,3,6,12,18,24]
