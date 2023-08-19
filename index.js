@@ -1,6 +1,9 @@
 const inputMonto = document.getElementById("monto")
 const inputCuotas = document.getElementById("cuotas")
 
+const boton = document.getElementById("idBoton")
+boton.addEventListener("click", mostrarResultado)
+
 function mostrarResultado(){
    
     let valor = cuotass / montoo ;
