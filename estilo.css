@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lemonchiffon;
+}
+label{
+    padding-top: 100px;
+    padding-bottom: 10px;
+    font-family: 'Bebas Neue', 'Konkhmer Sleokchher',sans-serif;
+    font-size: 1.7em;
+    place-items: center
+}
+button{
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-family: 'Bebas Neue', 'Konkhmer Sleokchher',sans-serif;
+    font-size: 1em;
+    place-items: center
+}
+#respuesta{
+    font-family: 'Bebas Neue', 'Konkhmer Sleokchher',sans-serif;
+    place-items: center;
+    font-size: 3em;
+}
