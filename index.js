@@ -10,6 +10,20 @@ function mostrarResultado(){
     const mostrar = inputMonto.value / inputCuotas.value
     resp.innerText = mostrar
 }
+const inputmont = document.getElementById("mont")
+const inputFijo = document.getElementById("plazoFijo")
+const inputinteres = document.getElementById("interes")
+
+const respu = document.getElementById("respuesta1")
+
+const boton1 = document.getElementById("Boton1")
+boton1.addEventListener("click", mostrarResultado)
+
+function mostrarResultado(){
+    const mostra = inputMont.value * inputinteres.value
+    const final = mostra / imputfijo.value
+    respu.innerText = final
+}
 const miArray = [1,3,6,12,18,24]
 
 if (resp != miArray[0]){
