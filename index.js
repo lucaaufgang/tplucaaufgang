@@ -1,7 +1,7 @@
 const inputMonto = document.getElementById("monto")
 const inputCuotas = document.getElementById("cuotas")
 const resp = document.getElementById("respuesta")
-const boton = document.getElementById("submit")
+const boton = document.getElementById("boton")
 boton.addEventListener("submit", mostrarResultado)
 e.preventDefault()
 
