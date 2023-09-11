@@ -3,7 +3,6 @@ const inputCuotas = document.getElementById("cuotas")
 const resp = document.getElementById("respuesta")
 const boton = document.getElementById("boton")
 boton.addEventListener("submit", mostrarResultado)
-e.preventDefault()
 
 function mostrarResultado(){
     const mostrar = inputMonto.value / inputCuotas.value
