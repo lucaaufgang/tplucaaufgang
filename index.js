@@ -1,28 +1,13 @@
 const inputMonto = document.getElementById("monto")
 const inputCuotas = document.getElementById("cuotas")
-
 const resp = document.getElementById("respuesta")
-
-const boton = document.getElementById("Boton")
-boton.addEventListener("click", mostrarResultado)
+const boton = document.getElementById("submit")
+boton.addEventListener("submit", mostrarResultado)
+e.preventDefault()
 
 function mostrarResultado(){
     const mostrar = inputMonto.value / inputCuotas.value
     resp.innerText = mostrar
-}
-const inputmont = document.getElementById("mont")
-const inputFijo = document.getElementById("plazoFijo")
-const inputinteres = document.getElementById("interes")
-
-const respu = document.getElementById("respuesta1")
-
-const boton1 = document.getElementById("Boton1")
-boton1.addEventListener("click", resultPrestamo)
-
-function resultPrestamo(){
-    const mostra = inputMont.value * inputinteres.value
-    const final = mostra / imputfijo.value
-    respu.innerText = final
 }
 const miArray = [1,3,6,12,18,24]
 
