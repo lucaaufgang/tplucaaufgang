@@ -1,24 +1,30 @@
-const inputMonto = document.getElementById("monto")
-const inputCuotas = document.getElementById("cuotas")
-const resp = document.getElementById("respuesta")
-const boton = document.getElementById("boton")
-boton.addEventListener("submit", mostrarResultado)
+const inputMonto = document.getElementById("monto");
+const inputCuotas = document.getElementById("cuotas");
+const resp = document.getElementById("respuesta");
+const boton1 = document.getElementById("boton1");
 
-function mostrarResultado(){
-    const mostrar = inputMonto.value / inputCuotas.value
-    resp.innerText = mostrar
+boton1.addEventListener("click", mostrarResultado);
+
+function mostrarResultado() {
+    const mostrar = inputMonto.value / inputCuotas.value;
+    resp.innerText = "Cada cuota será de $" + mostrar;
 }
-const inputmont = document.getElementById("mont")
-const inputFijo = document.getElementById("plazoFijo")
-const inputinteres = document.getElementById("interes")
-const respu = document.getElementById("respuesta1")
-const boton1 = document.getElementById("Boton1")
-boton1.addEventListener("submit", resultPrestamo)
 
-function resultPrestamo(){
-    const mostra = inputMont.value * inputinteres.value
-    const final = mostra / imputfijo.value
-    respu.innerText = final
+const inputMontoPrestamo = document.getElementById("montoPrestamo");
+const inputPlazoFijo = document.getElementById("plazoFijo");
+const inputInteres = document.getElementById("interes");
+const resp2 = document.getElementById("respuesta2");
+const boton2 = document.getElementById("boton2");
+
+boton2.addEventListener("click", calcularPrestamo);
+
+function calcularPrestamo() {
+    const monto = parseFloat(inputMontoPrestamo.value);
+    const interes = parseFloat(inputInteres.value) / 100;
+    const plazo = parseFloat(inputPlazoFijo.value);
+    
+    const cuota = (monto * interes) / (1 - Math.pow(1 + interes, -plazo));
+    resp2.innerText = "La cuota mensual será de $" + cuota.toFixed(2);
 }
 
 const miArray = [1,3,6,12,18,24]
