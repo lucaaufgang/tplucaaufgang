@@ -48,6 +48,11 @@ label{
     display:block;
     margin: 3px;
 }
+.coutas1{
+    display:block;
+    margin: 3px;
+    margin-bottom: 0px;
+}
 .montoLab{
     display:block;
 }
