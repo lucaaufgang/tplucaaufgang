@@ -27,23 +27,26 @@ function mostrarResultado() {
             alert('Por favor, indicar el monto');
         }
     }
-
+    const inputNombre = document.getElementById("nombre");
 const inputMontoPrestamo = document.getElementById("montoPrestamo");
-const inputPlazoFijo = document.getElementById("plazoFijo");
+const inputCuotasPrestamo = document.getElementById("cuotasPrestamo");
 const inputInteres = document.getElementById("interes");
 const resp2 = document.getElementById("respuesta2");
 const boton2 = document.getElementById("boton2");
-
 boton2.addEventListener("click", calcularPrestamo);
 
 function calcularPrestamo() {
-    const monto = parseFloat(inputMontoPrestamo.value);
-    const interes = parseFloat(inputInteres.value) / 100;
-    const plazo = parseFloat(inputPlazoFijo.value);
-    
-    const cuota = (monto * interes) / (1 - Math.pow(1 + interes, -plazo));
-    resp2.innerText = "La cuota mensual será de $" + cuota.toFixed(2);
-}
+    const prestamo ={
+        nombre: inputNombre,
+        monto: inputMontoPrestamo,
+        Cuotaprestamo: inputCuotasPrestamo,
+        interes: inputInteres,
+    }
+        const respuesta = monto * Cuotaprestamo
+        const respuesta1 =  monto * interes / 12
+        const respuestaFinal = respuesta + respuesta1
+    }
+
 
 const miArray = [1,3,6,12,18,24]
 

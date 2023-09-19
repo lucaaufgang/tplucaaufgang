@@ -12,7 +12,7 @@
     <form id="formulario1" class="formulario">
         <label for="monto">Monto: </label>
         <input type="number" name="monto" id="monto" class="monto" placeholder="Escriba el monto">
-        <label for="mouta">
+        <label for="cuota">
         <select name="cuotas" id="coutas">
             <option value="1" class="couta">1</option>
             <option value="3" class="couta">3</option>
@@ -33,10 +33,25 @@
 
     <h2>Préstamos</h2>
     <form id="formulario" class="formulario">
+        <label for="nombre">nombre </label>
+        <input type="text" name="nombre" id="nombre" class="nombre" placeholder="Escriba el nombre">
         <label for="interes">Interés: </label>
         <input type="number" name="interes" id="interes" class="interes" placeholder="Escriba el porcentaje de interés">
-        <label for="plazoFijo">Plazo fijo: </label>
-        <input type="number" name="plazoFijo" id="plazoFijo" class="plazoFijo" placeholder="Escriba el plazo fijo">
+        <label for="mouta">
+            <select name="cuotas" id="coutasPrestamo">
+                <option value="1" class="coutaPrestamo">1</option>
+                <option value="3" class="coutaPrestamo">3</option>
+                <option value="6" class="coutaPrestamo">6</option>
+                <option value="9" class="coutaPrestamo">9</option>
+                <option value="12" class="coutaPrestamo">12</option>
+                <option value="18" class="coutaPrestamo">18</option>
+                <option value="24" class="coutaPrestamo">24</option>
+                <option value="30" class="coutaPrestamo">30</option>
+                <option value="32" class="coutaPrestamo">32</option>
+                <option value="36" class="coutaPrestamo">36</option>
+                <option value="48" class="coutaPrestamo">48</option>
+             </select>
+        </label>
         <label for="montoPrestamo">Monto: </label>
         <input type="number" name="montoPrestamo" id="montoPrestamo" class="montoPrestamo" placeholder="Escriba el monto">
         <button type="button" id="boton2" class="boton">Enviar</button>
