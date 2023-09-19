@@ -1,3 +1,18 @@
+const username = document.getElementById('username')
+const password = document.getElementById('password')
+const button = document.getElementById('button')
+button.addEventListener('clik', (e) => {
+    e.preventDefault()
+    const datos = {
+        username: username.value,
+        password: password.value
+        }
+        location.href = "index.html"
+    }
+)
+
+
+
 const inputMonto = document.getElementById("monto");
 const inputCuotas = document.getElementById("cuotas");
 const resp = document.getElementById("respuesta");
@@ -7,8 +22,11 @@ boton1.addEventListener("click", mostrarResultado);
 
 function mostrarResultado() {
     const mostrar = inputMonto.value / inputCuotas.value;
-    resp.innerText = "Cada cuota será de $" + mostrar;
-}
+    resp.innerText = "Cada cuota será de $" + mostrar; 
+        if (inputMonto === '') {
+            alert('Por favor, indicar el monto');
+        }
+    }
 
 const inputMontoPrestamo = document.getElementById("montoPrestamo");
 const inputPlazoFijo = document.getElementById("plazoFijo");

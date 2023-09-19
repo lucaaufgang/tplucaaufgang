@@ -10,10 +10,23 @@
     <h1>Proyecto Final de JavaScript</h1>
 
     <form id="formulario1" class="formulario">
-        <label for="cuotas">Cantidad de cuotas: </label>
-        <input type="text" name="cantidad de cuotas" id="cuotas" class="cuotas" placeholder="Escriba la cantidad de cuotas">
         <label for="monto">Monto: </label>
         <input type="text" name="monto" id="monto" class="monto" placeholder="Escriba el monto">
+        <label for="mouta">
+        <select name="cuotas" id="coutas">
+            <option value="1" class="couta">1</option>
+            <option value="3" class="couta">3</option>
+            <option value="6" class="couta">6</option>
+            <option value="9" class="couta">9</option>
+            <option value="12" class="couta">12</option>
+            <option value="18" class="couta">18</option>
+            <option value="24" class="couta">24</option>
+            <option value="30" class="couta">30</option>
+            <option value="32" class="couta">32</option>
+            <option value="36" class="couta">36</option>
+            <option value="48" class="couta">48</option>
+         </select>
+    </label>
         <button type="button" id="boton1">Enviar</button>
         <p id="respuesta"></p>
     </form>
