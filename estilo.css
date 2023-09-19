@@ -40,12 +40,12 @@ label{
     display:block;
     margin: 3px;
 }
-.plazoFijo{
+.montoPrestamo{
     display: block;
     margin: 3px;
 }
-.montoPrestamo{
-    display: block;
+.nombre{
+    display:block;
     margin: 3px;
 }
 #respuesta{
