@@ -20,26 +20,33 @@ label{
 }
 .monto{
     display:block;
+    margin: 3px;
 }
 .coutas{
     display:block;
+    margin: 3px;
 }
 .boton{
     display:block;
+    margin: 3px;
     padding-top: 60px;
     padding-bottom: 10px;
     font-family: 'Bebas Neue', 'Konkhmer Sleokchher',sans-serif;
     font-size: 1em;
     place-items: center
+    
 }
 .interes{
     display:block;
+    margin: 3px;
 }
 .plazoFijo{
     display: block;
+    margin: 3px;
 }
 .montoPrestamo{
     display: block;
+    margin: 3px;
 }
 #respuesta{
     font-family: 'Bebas Neue', 'Konkhmer Sleokchher',sans-serif;
