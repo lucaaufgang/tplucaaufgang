@@ -7,7 +7,9 @@
 body{
     background-color: lemonchiffon;
 }
-
+.formulario{
+    border: solid;
+}
 label{
     padding-top: 100px;
     padding-bottom: 10px;
@@ -16,12 +18,28 @@ label{
     display: inline;
 
 }
-button{
+.monto{
+    display: inline-block;
+}
+.coutas{
+    display: inline-block;
+}
+.boton{
+    display: inline-block;
     padding-top: 60px;
     padding-bottom: 10px;
     font-family: 'Bebas Neue', 'Konkhmer Sleokchher',sans-serif;
     font-size: 1em;
     place-items: center
+}
+.interes{
+    display: inline-block;
+}
+.plazoFijo{
+    display: inline-block;
+}
+.montoPrestamo{
+    display: inline-block;
 }
 #respuesta{
     font-family: 'Bebas Neue', 'Konkhmer Sleokchher',sans-serif;
