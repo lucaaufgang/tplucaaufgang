@@ -57,7 +57,7 @@ function calcularPrestamo() {
         const respuesta = monto * CuotaPrestamo
         const respuesta1 =  monto * interes / 12
         const respuestaFinal = respuesta + respuesta1
-        resp2.innerText = nombre + 'debe pagar' + respuestaFinal
+        resp2.innerText = nombre + ' debe pagar ' + respuestaFinal
     }
    
 
