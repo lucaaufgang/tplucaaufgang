@@ -48,10 +48,6 @@ function calcularPrestamo() {
     } else {
         console.log('Número de cuotas no válido.');
             }
-        const respuesta = monto * numeroCuotas
-        const respuesta1 =  monto * interes / 12
-        const respuestaFinal = respuesta + respuesta1
-       
         if (prestamo === '') {
             alert('Por favor, indicar los valores');
             resp.innerText = "debe indicar los valores"
