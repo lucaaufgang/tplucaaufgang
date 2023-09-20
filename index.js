@@ -36,10 +36,10 @@ boton2.addEventListener("click", calcularPrestamo);
 
 function calcularPrestamo() {
     const numeroCuotas = inputCuotasPrestamo.value
-    const prestamo ={
+    const prestamo = {
         nombre: inputNombre.value,
         monto: inputMontoPrestamo.value,
-        Cuotaprestamo: numeroCuotas.value,
+        CuotaPrestamo: numeroCuotas.value,
         interes: inputInteres.value,
     }
 
@@ -53,11 +53,11 @@ function calcularPrestamo() {
             resp.innerText = "debe indicar los valores"
         }
     }
-    function FinalPrestamo(inputMontoPrestamo,inputInteres, cuotasPrestamo,inputNombre){
-        const respuesta = inputMontoPrestamo * cuotasPrestamo
-        const respuesta1 =  inputMontoPrestamo * inputInteres / 12
+    function FinalPrestamo(nombre,monto,CuotaPrestamo,interes){
+        const respuesta = montoonto * CuotaPrestamo
+        const respuesta1 =  monto * interes / 12
         const respuestaFinal = respuesta + respuesta1
-        resp2.innerText = inputNombre + 'debe pagar' + respuestaFinal
+        resp2.innerText = nombre + 'debe pagar' + respuestaFinal
     }
    
 
