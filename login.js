@@ -1,7 +1,7 @@
 const username = document.getElementById('username')
 const password = document.getElementById('password')
 const button = document.getElementById('button')
-button.addEventListener('clik', (e) => {
+button.addEventListener('click', (e) => {
     e.preventDefault()
     const datos = {
         username: username.value,
