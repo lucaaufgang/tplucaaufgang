@@ -54,8 +54,9 @@ function calcularPrestamo() {
         }
     }
     function FinalPrestamo(nombre,monto,CuotaPrestamo,interes){
+        const porcentaje = interes / 100
         const respuesta = monto * CuotaPrestamo
-        const respuesta1 =  monto * interes / 12
+        const respuesta1 =  monto * porcentaje / 12
         const respuestaFinal = respuesta + respuesta1
         resp2.innerText = nombre + ' debe pagar ' + respuestaFinal
     }
