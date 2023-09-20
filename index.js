@@ -24,6 +24,7 @@ function mostrarResultado() {
     resp.innerText = "Cada cuota será de $" + mostrar; 
         if (inputMonto === '') {
             alert('Por favor, indicar el monto');
+            resp.innerText = "debe indicar los valores"
         }
     }
     const inputNombre = document.getElementById("nombre");
@@ -44,6 +45,10 @@ function calcularPrestamo() {
         const respuesta = monto * Cuotaprestamo
         const respuesta1 =  monto * interes / 12
         const respuestaFinal = respuesta + respuesta1
+        if (prestamo === '') {
+            alert('Por favor, indicar los valores');
+            resp.innerText = "debe indicar los valores"
+        }
     }
 
 
